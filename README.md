@@ -1,106 +1,151 @@
-# ResumeFit
+# ResumeFit – AI Resume Tailoring Platform
 
 ## Overview
 
-Resume Fit Analyzer is an AI-powered application that evaluates how well a resume matches a job description. The platform analyzes candidate resumes, identifies missing skills, highlights strengths, and generates personalized recommendations to improve resume relevance for specific roles.
+ResumeFit is an AI-powered application that helps job seekers tailor their resumes for specific job descriptions. Instead of submitting the same resume for every application, users can import their master resume, analyze a target job description, and generate optimized resume versions based on different application strategies.
 
-The application is designed to help job seekers optimize their resumes before applying, increasing the likelihood of passing Applicant Tracking Systems (ATS) and recruiter screening.
+The platform also explains why certain experiences, skills, and projects were selected, making the resume generation process transparent and easier to understand.
 
 ---
 
 ## Problem Statement
 
-Many candidates submit the same resume for every job application, resulting in low ATS scores and missed opportunities.
+Many candidates apply to multiple jobs using a single generic resume, leading to poor ATS compatibility and lower interview conversion rates.
 
-This project addresses that challenge by automatically comparing resumes with job descriptions and providing actionable recommendations for tailoring resumes to specific roles.
+ResumeFit solves this problem by intelligently matching resumes with job descriptions, identifying relevant experiences and skills, and generating personalized resumes optimized for different hiring scenarios.
 
 ---
 
 ## Key Features
 
-### Resume Upload
+### Resume Import
 
-* Upload resumes in PDF format
-* Extract resume content automatically
+- Upload an existing resume
+- Extract structured candidate information
+- Create a reusable master profile
+
+### Master Profile Management
+
+- Store personal information, education, experience, projects, and skills
+- Edit and reuse profile information for future applications
 
 ### Job Description Analysis
 
-* Compare resume against a target job description
-* Identify relevant skills and keywords
+- Analyze job descriptions
+- Extract important keywords and required skills
+- Identify role-specific requirements
 
-### Skill Gap Detection
+### AI Resume Generation
 
-* Highlight missing technical and soft skills
-* Identify areas for improvement
+Generate multiple resume versions, including:
 
-### AI-Powered Recommendations
+- ATS Optimized
+- Impact Optimized
+- Technical Specialist
+- Builder & Owner
 
-* Generate personalized suggestions for improving resume relevance
-* Recommend additional keywords and skills
-* Improve ATS compatibility
+Each version prioritizes different experiences while remaining factually accurate.
+
+### Explainable AI Recommendations
+
+For every generated resume, the platform provides:
+
+- Why experiences were selected
+- Matching skills and keywords
+- Missing keywords
+- Resume-job alignment insights
+
+### Resume Export
+
+- Generate professional one-page resumes
+- Export as PDF
+- Maintain clean and consistent formatting
 
 ---
 
 ## Technology Stack
 
-* Python
-* Streamlit
-* Generative AI
-* PDF Processing
-* Natural Language Processing
+- Python
+- Streamlit
+- PyPDF
+- ReportLab
+- JSON
+- Regular Expressions (Regex)
 
 ---
 
 ## Project Structure
 
-* app.py – Main application
-* requirements.txt – Project dependencies
-* sample_resume.pdf – Example resume
-* sample_job_description.txt – Example job description
+```
+resume-fit/
+
+├── app.py
+├── profile.json
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── .env.example
+│
+└── screenshots/
+    ├── home_page.png
+    ├── import_resume.png
+    ├── master_profile.png
+    ├── strategy_options.png
+    ├── ai_explanation.png
+    └── generated_resume.png
+```
 
 ---
+
+# Screenshots
 
 ## Home Page
 
-![Home](screenshots/home_page.png)
+![Home Page](screenshots/home_page.png)
 
 ---
 
-## Resume Upload
+## Import Resume
 
-![Resume Upload](screenshots/upload_resume.png)
-
----
-
-## Analysis Results
-
-![Analysis Results](screenshots/analysis_results.png)
+![Import Resume](screenshots/import_resume.png)
 
 ---
 
-## Skill Gap Analysis
+## Master Profile
 
-![Skill Gap Analysis](screenshots/skill_gap_analysis.png)
+![Master Profile](screenshots/master_profile.png)
 
 ---
 
-## AI Recommendations
+## Resume Strategy Generation
 
-![Recommendations](screenshots/recommendations.png)
+![Resume Strategy](screenshots/strategy_options.png)
+
+---
+
+## AI Explanation
+
+![AI Explanation](screenshots/ai_explanation.png)
+
+---
+
+## Generated Resume Preview
+
+![Generated Resume](screenshots/generated_resume.png)
 
 ---
 
 ## Future Enhancements
 
-* ATS score prediction
-* Resume rewriting assistance
-* Cover letter generation
-* Multi-role resume optimization
-* Interview preparation suggestions
-* LinkedIn profile analysis
+- ATS score prediction
+- Cover letter generation
+- LinkedIn profile optimization
+- Multi-role resume recommendations
+- AI interview preparation
+- Cloud profile synchronization
 
 ---
 
 ## Repository Note
 
-API credentials and sensitive configuration files have been excluded from the public repository. Configure required environment variables using the `.env.example` file.
+Sensitive configuration files and API credentials have been excluded from the public repository. Configure environment variables using the provided `.env.example` template before running the application.
